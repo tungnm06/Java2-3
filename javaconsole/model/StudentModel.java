@@ -125,7 +125,7 @@ public class StudentModel {
         ArrayList<Student> listStudent = studentModel.getListStudent();
      //   for (Student student : listStudent) {
             // System.out.println(student.getName());
-             //studentModel.deleteId(7);
+             studentModel.deleteId(7);
             studentModel.updateId(3, new Student(3, "Dung", "Dung123@gmail.com", "A123", "C1702G", 1));
       //  }
 
@@ -140,42 +140,14 @@ public class StudentModel {
         //   studentModel.insert(student);
     }
 
-    private static ArrayList<Student> listStudent;
 
-    public void getList() {
 
-        if (listStudent == null) {
-            System.out.println("Danh sach trống");
-            return;
-        }
 
-        for (Student st : listStudent) {
-            System.out.println(" Name: " + st.getName() + "\n" + " Email: " + st.getEmail());
+ 
 
-        }
-    }
 
-    public void update(Student updateStudent) {
-        if (listStudent != null && listStudent.size() > 0) {
-            for (Student student1 : listStudent) {
-                if (student1.getId() == updateStudent.getId()) {
 
-                }
-            }
-        }
-
-    }
-
-    public void delete(long id) {
-        if (listStudent != null && listStudent.size() > 0) {
-            for (Student student1 : listStudent) {
-                if (student1.getId() == id) {
-
-                }
-            }
-        }
-
-    }
+    
 
     //   public static List<Student> getListStudent(){
     //     List<Student> liststudent= new ArrayList<>();
